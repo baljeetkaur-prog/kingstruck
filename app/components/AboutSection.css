@@ -1,0 +1,472 @@
+.aboutsec {
+  width: 100%;
+  background: #ffffff;
+
+  padding: 110px 0 140px;
+
+  font-family: var(--font-rajdhani), sans-serif;
+}
+
+.aboutsec-container {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* Left */
+.aboutsec-left {
+  flex: 1;
+
+  position: relative;
+}
+
+.aboutsec-img1-wrapper {
+  position: relative;
+  width: fit-content;
+}
+.aboutsec-img1 {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.aboutsec-yearbox {
+  position: absolute;
+  top: -50px;
+  right: -170px;
+
+  background: transparent;
+
+  color: #feba43;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+
+.aboutsec-yearbox p {
+  font-size: 18px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  margin-top: 3px;
+
+  text-align: right;
+}
+
+.aboutsec-yearbox h2 {
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 0.9;
+}
+
+
+.aboutsec-img2-wrapper {
+  position: absolute;
+
+  right: -200px;
+  bottom: -90px;
+
+  padding: 10px;
+}
+
+.aboutsec-img2 {
+  width: 400px;
+  height: 400px;
+
+  object-fit: cover;
+}
+
+/* Right */
+.aboutsec-right {
+  flex: 1;
+
+  max-width: 600px;
+}
+
+.aboutsec-smallheading {
+  color: #fc0202;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 5px;
+}
+
+.aboutsec-heading {
+  font-size: 50px;
+  line-height: 1.3; 
+  font-weight: 700;
+
+  color: #111111;
+
+  margin-bottom: 10px;
+}
+
+.aboutsec-para {
+  font-size: 18px;
+  line-height: 1.6;
+
+ color: #3f3f3f;
+
+  margin-bottom: 20px;
+}
+
+.aboutsec-btn {
+  display: inline-block;
+
+  background: #fc0202;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  padding: 15px 30px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.aboutsec-btn:hover {
+  background: #111111;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+
+  .aboutsec-container {
+    gap: 50px;
+  }
+
+  .aboutsec-heading {
+    font-size: 42px;
+  }
+
+  .aboutsec-img2-wrapper {
+    right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .aboutsec {
+    padding: 80px 0;
+  }
+
+  .aboutsec-container {
+    flex-direction: column;
+
+    gap: 80px;
+  }
+
+  .aboutsec-left,
+  .aboutsec-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .aboutsec-right {
+    text-align: center;
+  }
+
+  .aboutsec-heading {
+    font-size: 36px;
+  }
+
+  .aboutsec-img1-wrapper {
+    margin: 0 auto;
+  }
+
+  .aboutsec-img2-wrapper {
+    right: -10px;
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .aboutsec-container {
+    padding: 0 20px;
+  }
+
+  .aboutsec-heading {
+    font-size: 30px;
+  }
+
+  .aboutsec-para {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .aboutsec-yearbox {
+    top: 15px;
+    right: -10px;
+
+    padding: 16px 20px;
+  }
+
+  .aboutsec-yearbox h2 {
+    font-size: 38px;
+  }
+
+  .aboutsec-img2 {
+    width: 180px;
+    height: 150px;
+  }
+
+  .aboutsec-img2-wrapper {
+    bottom: -25px;
+  }
+}
+/* =========================
+   Laptop
+========================= */
+@media (max-width: 1200px) {
+
+  .aboutsec-container {
+    gap: 60px;
+  }
+
+  .aboutsec-img1 {
+    max-width: 480px;
+  }
+
+  .aboutsec-img2-wrapper {
+    right: -70px;
+    bottom: -50px;
+  }
+
+  .aboutsec-img2 {
+    width: 260px;
+    height: 260px;
+  }
+
+  .aboutsec-yearbox {
+    top: -25px;
+    right: -60px;
+  }
+
+  .aboutsec-yearbox h2 {
+    font-size: 72px;
+  }
+
+  .aboutsec-heading {
+    font-size: 36px;
+  }
+}
+
+/* =========================
+   Tablet
+========================= */
+@media (max-width: 900px) {
+
+  .aboutsec {
+    padding: 90px 0;
+  }
+
+  .aboutsec-container {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 90px;
+  }
+
+  .aboutsec-left,
+  .aboutsec-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .aboutsec-right {
+    text-align: center;
+  }
+
+  .aboutsec-img1-wrapper {
+    margin: 0 auto;
+    max-width: 360px;
+  }
+
+  .aboutsec-img1 {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .aboutsec-img2-wrapper {
+    right: -25px;
+    bottom: -35px;
+  }
+
+  .aboutsec-img2 {
+    width: 190px;
+    height: 190px;
+  }
+
+  .aboutsec-yearbox {
+    top: -20px;
+    right: -25px;
+  }
+
+  .aboutsec-yearbox h2 {
+    font-size: 58px;
+  }
+
+  .aboutsec-yearbox p {
+    font-size: 11px;
+  }
+
+  .aboutsec-heading {
+    font-size: 34px;
+  }
+
+  .aboutsec-para {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 600px) {
+
+  .aboutsec {
+    padding: 70px 0;
+  }
+
+  .aboutsec-container {
+    padding: 0 20px;
+    gap: 65px;
+  }
+
+  .aboutsec-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutsec-img1-wrapper {
+    width: 100%;
+    max-width: 250px;
+
+    margin: 0 auto;
+  }
+
+  .aboutsec-img1 {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* Year Box */
+  .aboutsec-yearbox {
+    top: -40px;
+    right: -40px;
+
+    z-index: 5;
+  }
+
+  .aboutsec-yearbox h2 {
+    font-size: 38px;
+    line-height: 1;
+  }
+
+  .aboutsec-yearbox p {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+
+    margin-top: 2px;
+  }
+
+  /* Overlay Image */
+  .aboutsec-img2-wrapper {
+    right: -18px;
+    bottom: -25px;
+
+    padding: 4px;
+  }
+
+  .aboutsec-img2 {
+    width: 115px;
+    height: 115px;
+
+    object-fit: cover;
+  }
+
+  /* Right Content */
+  .aboutsec-right {
+    text-align: center;
+  }
+
+  .aboutsec-smallheading {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .aboutsec-heading {
+    font-size: 28px;
+    line-height: 1.35;
+
+    margin-bottom: 16px;
+  }
+
+  .aboutsec-para {
+    font-size: 15px;
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+  }
+
+  .aboutsec-btn {
+    padding: 13px 24px;
+    font-size: 14px;
+  }
+}
+/* =========================
+   Extra Large Screens Fix
+========================= */
+@media (min-width: 1400px) {
+
+  .aboutsec-img1 {
+    max-width: 540px;
+  }
+
+  .aboutsec-img2 {
+    width: 320px;
+    height: 320px;
+  }
+
+  .aboutsec-img2-wrapper {
+    right: -120px;
+    bottom: -70px;
+  }
+
+  .aboutsec-yearbox {
+    right: -120px;
+    top: -40px;
+  }
+
+  .aboutsec-heading {
+    font-size: 46px;
+  }
+
+  .aboutsec-container {
+    gap: 60px;
+  }
+}

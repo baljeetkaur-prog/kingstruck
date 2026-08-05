@@ -1,0 +1,100 @@
+/* Background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9ecef; /* soft grey */
+}
+
+/* Login card */
+.login-card {
+  width: 380px;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  text-align: center;
+}
+
+/* Logo */
+.login-logo {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 10px auto;
+}
+
+/* Title */
+.login-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Inputs */
+.login-input {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.login-input:focus {
+outline: none; 
+}
+
+.login-button {
+  padding: 10px 30px;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+
+  width: auto;          /* 🔥 key fix */
+  align-self: center;   /* centers button in flex column */
+}
+
+.login-button:hover {
+  background: #000;
+}
+
+/* Small responsive tweak */
+@media (max-width: 420px) {
+  .login-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper .login-input {
+  width: 100%;
+  padding-right: 40px; /* space for eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon:hover {
+  color: #000;
+}

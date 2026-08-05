@@ -1,0 +1,284 @@
+/* =========================
+   BLOG PAGE
+========================= */
+.adminblog-page {
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #ededed;
+}
+
+/* HEADER */
+.adminblog-header {
+  margin-bottom: 28px;
+}
+
+.adminblog-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.adminblog-header p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* =========================
+   FORM
+========================= */
+.blog-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.blog-form-group {
+  margin-bottom: 22px;
+}
+
+.blog-form-group label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.blog-form-group input,
+.blog-form-group textarea {
+  width: 100%;
+
+  border: 1px solid #dddddd;
+  background: #ffffff;
+
+  padding: 12px 14px;
+
+  font-size: 14px;
+  color: #111;
+
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.blog-form-group input:focus,
+.blog-form-group textarea:focus {
+  outline: none; 
+}
+
+.blog-form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* =========================
+   IMAGE PREVIEW
+========================= */
+.blog-preview-wrapper {
+  position: relative;
+  margin-top: 14px;
+  width: fit-content;
+}
+
+.blog-image-preview {
+  width: 220px;
+  border: 1px solid #ededed;
+}
+
+.remove-blog-image-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  width: 28px;
+  height: 28px;
+
+  border: none;
+  background: #111;
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+/* =========================
+   EDITOR
+========================= */
+.editor-heading {
+  margin-bottom: 14px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* TOOLBAR */
+.adminblog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  padding: 14px;
+
+  background: #f8f8f8;
+  border: 1px solid #ededed;
+  border-bottom: none;
+}
+
+.adminblog-toolbar button {
+  padding: 8px 12px;
+
+  border: 1px solid #ddd;
+  background: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+.adminblog-toolbar button:hover {
+  background: #f4f6f9;
+}
+
+/* CONTENT EDITOR */
+.adminblog-editor {
+  min-height: 500px;
+
+  border: 1px solid #ededed;
+  background: #ffffff;
+
+  padding: 20px;
+
+  outline: none;
+
+  font-size: 16px;
+  color: #111;
+
+  line-height: 1.8;
+}
+
+/* PLACEHOLDER */
+.adminblog-editor:empty:before {
+  content: "Write your blog content here...";
+  color: #999;
+}
+
+/* TYPOGRAPHY INSIDE EDITOR */
+.adminblog-editor h1 {
+  font-size: 38px;
+  margin: 20px 0;
+}
+
+.adminblog-editor h2 {
+  font-size: 32px;
+  margin: 18px 0;
+}
+
+.adminblog-editor h3 {
+  font-size: 28px;
+  margin: 16px 0;
+}
+
+.adminblog-editor h4 {
+  font-size: 24px;
+  margin: 14px 0;
+}
+
+.adminblog-editor h5 {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+.adminblog-editor h6 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.adminblog-editor p {
+  margin-bottom: 16px;
+}
+
+.adminblog-editor ul,
+.adminblog-editor ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.adminblog-editor a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.adminblog-editor img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+.blog-submit-btn {
+  margin-top: 24px;
+
+  background: #111;
+  color: white;
+
+  border: none;
+
+  padding: 14px 24px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.blog-submit-btn:hover {
+  background: #000;
+}
+
+.blog-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .blog-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminblog-toolbar {
+    gap: 8px;
+  }
+
+  .adminblog-toolbar button {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+}
+.adminblog-editor ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.adminblog-editor ol {
+  list-style-type: decimal;
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.adminblog-editor li {
+  margin-bottom: 8px;
+}

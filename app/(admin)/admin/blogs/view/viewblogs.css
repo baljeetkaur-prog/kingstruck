@@ -1,0 +1,220 @@
+.viewblogs-page {
+  background: #fff;
+  border: 1px solid #ededed;
+  padding: 24px;
+}
+
+/* HEADER */
+.viewblogs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.viewblogs-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.viewblogs-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ADD BLOG BTN */
+.add-blog-btn {
+  background: #111;
+  color: white;
+
+  text-decoration: none;
+
+  padding: 12px 18px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.add-blog-btn:hover {
+  background: #000;
+}
+
+/* TABLE */
+.viewblogs-table-wrapper {
+  overflow-x: auto;
+}
+
+.viewblogs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.viewblogs-table thead {
+  background: #f8f8f8;
+}
+
+.viewblogs-table th {
+  text-align: left;
+
+  padding: 16px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #111;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.viewblogs-table td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f1f1;
+
+  font-size: 14px;
+  color: #444;
+}
+
+/* IMAGE */
+.blog-table-image {
+  width: 80px;
+  height: 60px;
+
+  object-fit: cover;
+
+  border: 1px solid #eee;
+}
+
+/* TITLE */
+.blog-title-cell {
+  min-width: 240px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ACTIONS */
+.blog-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-action-btn {
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid #ddd;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #111;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.blog-action-btn:hover {
+  background: #f4f6f9;
+}
+
+.blog-action-btn.delete {
+  color: red;
+}
+
+/* EMPTY */
+.no-blogs {
+  text-align: center;
+  padding: 40px 0 !important;
+  color: #777;
+}
+/* =========================
+   DELETE MODAL
+========================= */
+.delete-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+}
+
+.delete-modal {
+  width: 420px;
+  background: #fff;
+
+  padding: 28px;
+
+  border: 1px solid #ededed;
+}
+
+.delete-modal h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.delete-modal p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.delete-modal-actions {
+  margin-top: 24px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* CANCEL */
+.cancel-delete-btn {
+  padding: 12px 18px;
+
+  border: 1px solid #ddd;
+  background: white;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cancel-delete-btn:hover {
+  background: #f5f5f5;
+}
+
+/* DELETE */
+.confirm-delete-btn {
+  padding: 12px 18px;
+
+  border: none;
+
+  background: #111;
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.confirm-delete-btn:hover {
+  background: #000;
+}

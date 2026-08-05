@@ -1,0 +1,398 @@
+/* GLOBAL LAYOUT */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  background: #f4f6f9; /* light grey dashboard bg */
+  font-family: system-ui, sans-serif;
+}
+.admin-sidebar {
+  width: 260px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ededed;
+  justify-content: space-between;
+}
+.admin-sidebar-footer {
+  padding: 14px;
+  border-top: 1px solid #ededed;
+}
+.admin-logout {
+  width: 100%;
+  padding: 10px 12px;
+
+  background: #111;
+  color: white;
+
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.admin-logout:hover {
+  background: #000;
+}
+
+/* CENTER LOGO */
+.admin-sidebar-logo {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.admin-sidebar-logo img {
+  width: 120px;
+  height: auto;
+}
+
+/* MENU */
+.admin-sidebar-content {
+  padding: 14px;
+  flex: 1;
+}
+
+/* LINK STYLE */
+.admin-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  font-size: 16px; 
+
+  color: #111;
+  text-decoration: none;
+
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+/* hover */
+.admin-link:hover {
+  background: #f4f6f9;
+}
+
+/* active (NO BACKGROUND as requested) */
+.admin-link.active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* chevron */
+.chevron {
+  color: #aaa;
+  transition: 0.2s ease;
+  font-size: 14px; 
+}
+
+/* optional: slight movement on hover */
+.admin-link:hover .chevron {
+  color: #777;
+}
+
+/* =========================
+   MAIN AREA
+========================= */
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+.admin-topbar {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #ededed;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+/* TITLE */
+.admin-topbar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* RIGHT AREA */
+.admin-topbar-right {
+  position: relative;
+}
+
+/* AVATAR BUTTON */
+.admin-avatar-btn {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.admin-avatar-btn svg {
+  font-size: 34px;
+  color: #555;
+}
+
+/* DROPDOWN */
+.admin-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+
+  width: 220px;
+
+  background: #fff;
+  border: 1px solid #ededed;
+
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* DROPDOWN ITEMS */
+.admin-dropdown-item {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  color: #111;
+
+  transition: 0.2s ease;
+}
+
+.admin-dropdown-item:hover {
+  background: #f4f6f9;
+}
+
+/* ICONS */
+.admin-dropdown-item svg {
+  font-size: 14px;
+  color: #777;
+}
+
+/* CONTENT AREA */
+.admin-content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* CARD */
+.admin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+/* =========================
+   DASHBOARD HEADER
+========================= */
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.dashboard-card {
+  background: #fff;
+  border: 1px solid #ededed;
+
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  transition: 0.2s ease;
+}
+
+.dashboard-card:hover {
+  cursor: pointer; 
+}
+
+/* ICON BOX */
+.dashboard-card-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+
+  flex-shrink: 0;
+}
+
+/* ICON COLORS */
+.dashboard-card-icon.queries {
+  background: #eef4ff;
+  color: #2b6ef3;
+}
+
+.dashboard-card-icon.quotations {
+  background: #fff4e8;
+  color: #ff8a00;
+}
+
+.dashboard-card-icon.blogs {
+  background: #eefbf3;
+  color: #19a463;
+}
+
+/* CARD TEXT */
+.dashboard-card h3 {
+  font-size: 15px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.dashboard-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+}
+/* OVERLAY */
+.password-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+/* MODAL */
+.password-modal {
+  width: 100%;
+  max-width: 420px;
+
+  background: #fff;
+
+  padding: 28px;
+
+  border: 1px solid #ededed;
+}
+
+.password-modal h2 {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 22px;
+
+  color: #111;
+}
+
+.password-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.password-modal input {
+  width: 100%;
+
+  border: 1px solid #ddd;
+
+  padding: 12px 14px;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.password-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+
+  margin-top: 10px;
+}
+
+.password-modal-actions button {
+  border: none;
+
+  padding: 12px 18px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.cancel-btn {
+  background: #f3f3f3;
+  color: #111;
+}
+
+.cancel-btn:hover {
+  background: #e7e7e7;
+}
+
+.save-btn {
+  background: #111;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #000;
+}
+
+.save-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

@@ -1,0 +1,432 @@
+.servicessec {
+  width: 100%;
+  background:#f5f5f5; 
+
+  padding: 60px 0;
+
+  font-family: var(--font-rajdhani), sans-serif;
+}
+
+.servicessec-container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  text-align: center;
+}
+
+/* Headings */
+.servicessec-small {
+  color: #fc0202;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.servicessec-heading {
+  font-size: 48px;
+  font-weight: 700;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  color: #111;
+}
+
+.servicessec-para {
+  font-size: 18px;
+  color: #444;
+
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+.services-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.services-slider {
+  display: flex;
+  gap: 30px;
+
+  transition: transform 0.6s ease;
+}
+
+.servicecard {
+  flex: 0 0 calc((100% - 60px) / 3); /* desktop: 3 cards */
+}
+
+/* Card */
+.servicecard {
+  position: relative;
+
+  background: #111;
+  cursor: pointer;
+  color: #fff;
+
+  padding: 35px;
+
+  height: 320px;
+
+  overflow: hidden;
+
+  text-align: left;
+
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.servicecard-icon {
+  font-size: 45px;
+  color: #fc0202;
+
+  margin-bottom: 20px;
+
+  transition: 0.3s ease;
+}
+
+/* hover change */
+.servicecard:hover .servicecard-icon {
+  color: #fff;
+}
+
+/* Title */
+.servicecard h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 600; 
+}
+
+.servicecard-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+
+.servicecard p {
+  font-size: 18px;
+  color: #d6d6d6;
+
+  line-height: 1.5;
+
+  transition: 0.3s ease;
+}
+.servicecard:hover p {
+  color: #f2f2f2;
+}
+
+.servicecard-footer {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #fff;
+}
+
+.readmore {
+  position: absolute;
+  left: 0;
+
+  opacity: 0;
+  transform: translateX(-12px);
+
+  transition: 0.4s ease;
+
+  white-space: nowrap;
+}
+.servicecard-arrow {
+  margin-left: auto;
+
+  transition: 0.3s ease;
+  flex-shrink: 0;
+}
+.servicecard:hover .readmore {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* arrow always fixed */
+.servicecard-footer svg {
+  transform: translateX(0);
+  transition: 0.3s ease;
+}
+
+/* Hover BG + Reveal Image */
+.servicecard-img {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+  transform: scale(1.1);
+
+  transition: 0.5s ease;
+
+  z-index: 0;
+}
+
+.servicecard-img img {
+  object-fit: cover;
+}
+
+/* Hover Effects */
+.servicecard:hover {
+  background: #ff4a4a;
+}
+
+.servicecard:hover .servicecard-img {
+  opacity: 0.25;
+  transform: scale(1);
+}
+
+.servicecard:hover .readmore {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* bring content above image */
+.servicecard > *:not(.servicecard-img) {
+  position: relative;
+  z-index: 2;
+}
+.slider-arrows {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.slider-arrows button {
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  cursor: pointer;
+
+  background: #111;
+  color: #fff;
+
+
+  font-size: 18px;
+
+  transition: 0.3s ease;
+}
+
+.slider-arrows button:hover {
+  background: #ff4a4a;
+}
+
+.slider-btn {
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  cursor: pointer;
+
+  background: #111;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.slider-btn:hover {
+  background: #ff4a4a;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .servicessec-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .servicessec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicessec-heading {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1000px) {
+  .servicecard {
+    flex: 0 0 calc((100% - 30px) / 2); /* tablet: 2 cards */
+  }
+}
+
+@media (max-width: 650px) {
+  .servicecard {
+    flex: 0 0 calc((100% - 30px) / 2); /* mobile: 2 cards */
+  }
+}
+/* =========================
+   Tablet (same as AboutSection style)
+========================= */
+@media (max-width: 900px) {
+
+  .servicessec {
+    padding: 80px 0;
+  }
+
+  .servicessec-heading {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .servicessec-para {
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .servicecard {
+    flex: 0 0 calc((100% - 30px) / 2); /* 2 cards */
+    height: 300px;
+    padding: 25px;
+  }
+
+  .servicecard h3 {
+    font-size: 22px;
+  }
+
+  .servicecard p {
+    font-size: 15px;
+  }
+
+  .servicecard-icon {
+    font-size: 35px;
+  }
+}
+
+/* =========================
+   Mobile (IMPORTANT: 2 cards per view)
+========================= */
+@media (max-width: 650px) {
+
+  .servicessec {
+    padding: 70px 0;
+  }
+
+  .servicessec-container {
+    padding: 0 20px;
+  }
+
+  .servicessec-heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .servicessec-para {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  /* keep 2 cards in view */
+  .servicecard {
+    flex: 0 0 calc((100% - 30px) / 2);
+  min-height: 320px;
+height: auto;
+    padding: 20px;
+  }
+
+  .servicecard h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .servicecard p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .servicecard-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .servicecard-footer {
+    font-size: 14px;
+  }
+
+  .slider-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .slider-arrows {
+    margin-top: 25px;
+    gap: 12px;
+  }
+}
+
+/* =========================
+   Very small phones
+========================= */
+@media (max-width: 400px) {
+
+  .servicecard {
+    height: 240px;
+    padding: 16px;
+  }
+
+  .servicecard h3 {
+    font-size: 16px;
+  }
+
+  .servicecard p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .slider-arrows {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .slider-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 650px) {
+  .slider-arrows {
+    gap: 12px;
+    margin-top: 25px;
+  }
+
+  .slider-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,97 @@
+/* =========================
+   QUOTATIONS PAGE
+========================= */
+.quotations {
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #ededed;
+}
+
+/* HEADER */
+.quotations h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   TABLE WRAPPER
+========================= */
+.quotations-table {
+  width: 100%;
+  overflow-x: auto;
+
+  background: #ffffff;
+  border: 1px solid #ededed;
+}
+
+/* TABLE */
+.quotations table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+}
+
+/* TABLE HEADER */
+.quotations th {
+  background: #f8f8f8;
+
+  padding: 16px 18px;
+
+  border-bottom: 1px solid #ededed;
+
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+
+  white-space: nowrap;
+}
+
+/* TABLE DATA */
+.quotations td {
+  padding: 16px 18px;
+
+  border-bottom: 1px solid #f1f1f1;
+
+  font-size: 14px;
+  color: #444;
+
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+/* LAST ROW */
+.quotations tr:last-child td {
+  border-bottom: none;
+}
+
+/* HOVER EFFECT */
+.quotations tbody tr {
+  transition: 0.2s ease;
+}
+
+.quotations tbody tr:hover {
+  background: #fafafa;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .quotations {
+    padding: 18px;
+  }
+
+  .quotations h1 {
+    font-size: 24px;
+  }
+
+  .quotations th,
+  .quotations td {
+    padding: 14px;
+    font-size: 13px;
+  }
+}

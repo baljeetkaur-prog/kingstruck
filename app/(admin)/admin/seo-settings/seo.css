@@ -1,0 +1,118 @@
+/* =========================
+   SEO PAGE
+========================= */
+.seo-page {
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #ededed;
+}
+
+/* HEADER */
+.seo-page h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   FORM
+========================= */
+.seo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.seo-field {
+  margin-bottom: 22px;
+}
+
+.seo-field label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.seo-field input,
+.seo-field textarea,
+.seo-field select {
+  width: 100%;
+
+  border: 1px solid #dddddd;
+  background: #ffffff;
+
+  padding: 12px 14px;
+
+  font-size: 14px;
+  color: #111;
+
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.seo-field input:focus,
+.seo-field textarea:focus,
+.seo-field select:focus {
+  outline: none;
+}
+
+.seo-field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* SELECT */
+.seo-field select {
+  cursor: pointer;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+.seo-form button {
+  margin-top: 10px;
+
+  background: #111;
+  color: white;
+
+  border: none;
+
+  padding: 14px 24px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  width: fit-content;
+}
+
+.seo-form button:hover:not(:disabled) {
+  background: #000;
+}
+
+.seo-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .seo-page {
+    padding: 18px;
+  }
+
+  .seo-page h1 {
+    font-size: 24px;
+  }
+
+  .seo-form button {
+    width: 100%;
+  }
+}
