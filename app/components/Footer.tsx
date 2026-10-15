@@ -194,7 +194,7 @@ export default function Footer() {
     <FiMail className="footer-contact-icon" />
 
     <a href="mailto:info@kingstruckcenter.com">
-      info@kingstruckscenter.com
+      info@kingstruckcenter.com
     </a>
 
   </div>
