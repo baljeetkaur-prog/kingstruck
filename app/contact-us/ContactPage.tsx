@@ -304,7 +304,7 @@ const handleSubmit = async (
 
                     <div>
                       <h4>Email</h4>
-                      <p>kingstruckcenter15@gmail.com</p>
+                      <p>info@kingstruckcenter.com</p>
                     </div>
                   </div>
 
